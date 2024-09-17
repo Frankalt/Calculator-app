@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <a href="./calculator tool"></a>
+    <link rel="stylesheet" type="text/css" href="./calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Calculator App</h1>
+    <div class= "calcbody">  
+        <form name = "calc">       
+          <input id = "screen" type ="text" name = "answer"> 
+          <br> <br>  
+          <input class = "operator" type = "button" value = "+" onclick = "calc.answer.value += '+' ">  
+          <input class = "operator" type = "button" value = "-" onclick = "calc.answer.value += '-' ">  
+          <input class = "operator" type = "button" value = "*" onclick = "calc.answer.value += '*' ">  
+          <input class = "operator" type = "button" value = "/" onclick = "calc.answer.value += '/' ">  
+          <br> <br>
+          <div class= "numberpad">
+          <input type = "button" value = "7" onclick = "calc.answer.value += '7' ">  
+          <input type = "button" value = "8" onclick = "calc.answer.value += '8' ">  
+          <input type = "button" value = "9" onclick = "calc.answer.value += '9' "> 
+          <input class = "equals" type = "button" value = "=" onclick = "calc.answer.value = eval(calc.answer.value) ">   
+          <input type = "button" value = "4" onclick = "calc.answer.value += '4' ">  
+          <input type = "button" value = "5" onclick = "calc.answer.value += '5' ">  
+          <input type = "button" value = "6" onclick = "calc.answer.value += '6' ">
+          <input type = "button" value = "." onclick = "calc.answer.value += '.' ">   
+          <input type = "button" value = "1" onclick = "calc.answer.value += '1' "> 
+          <input type = "button" value = "2" onclick = "calc.answer.value += '2' ">  
+          <input type = "button" value = "3" onclick = "calc.answer.value += '3' "> 
+          <input type = "button" value = "0" onclick = "calc.answer.value += '0' "> 
+          </div> 
+          </form>
+          <input class = "clear" type = "button" value = "CLEAR" onclick = "calc.answer.value = ' ' " id= "clear" >  
+          <br>  
+    </div>        
+          <br>   
+</body>
+</html>
