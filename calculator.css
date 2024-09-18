@@ -3,7 +3,7 @@ html {
 }
 
 h1 {
-    background-color: #edcfcc;
+    background-color: whitesmoke;
     color: rgb(96, 92, 87);
     font-family: "Titillium Web", sans-serif;
     font-weight: 400;
@@ -19,43 +19,57 @@ h1 {
   }  
       
 #clear {  
+    text-align: center;
     width: 285px;  
-    background-color: rgb(171, 59, 59); 
+    background-color: rgb(245, 86, 86); 
     font-family: "Titillium Web", sans-serif;
     border: 1px solid rgb(42, 35, 35);  
     border-radius: 9px;  
     Padding: 3px;  
     box-shadow: 1 1px 20px;
 }  
-  
-.calcbody {  
-    width: 300px;  
-    height: 520px;  
-    background-color: #534c42;
-    border: 1px solid rgb(42, 35, 35);  
-    border-radius: 12px;  
-    padding: 15px;  
-    margin: auto; 
-    box-shadow: 0 5px 30px;
-}  
 
+.calcbody {
+    margin-left: 31%;
+    -webkit-box-align: center;
+    text-align: center;
+    width: min-content;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #505def;
+    border: #3442d6;
+    border-radius: 8px;
+    box-shadow: 0 1px 20px;
+}
 .operator {
     background-color: rgb(216, 169, 37);
-    padding-left: 29px;
-    margin-top: 20px;
-    margin-bottom: -5px;
-    font-size: large;
-    box-shadow: 0 0.1px 5px;
+    box-shadow: 1 1px 20px;
+    max-height: 20px;
+    margin-bottom: 5px;
 }
 
+.rowa {
+    background-color: aqua;
+}
+
+.rowb {
+    background-color: aqua;
+}
+  
+.rowc {
+    background-color: aqua;
+    
+}
+  
 .equals {
-    background-color: #697565;
-    font-size: x-large;
+    background-color: #47942e;
     box-shadow: 0 0.1px 5px;
 }
    
 input {   
-    background-color: #edcfcc;    
+    background-color: #9f9c9c;    
     border: 1px solid rgb(42, 35, 35);  
     border-radius: 6px;  
     padding: 23px;  
@@ -65,11 +79,14 @@ input {
 }  
 
 #screen {  
-    width: 240px; 
-    height: 38px; 
+    width: 245px;
+    height: 35px;
+    text-align: left; 
     border: 1px, solid rgb(42, 35, 35);  
     border-radius: 5px;     
     margin-top: 20px;
     margin-bottom: -15px;
     font-size: xx-large;
+    background-color: whitesmoke;
+    box-shadow: 1 1px 20px;
 }  
