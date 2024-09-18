@@ -15,28 +15,35 @@
     <div class= "calcbody">  
         <form name = "calc">       
           <input id = "screen" type ="text" name = "answer"> 
-          <br> <br>  
+          <br> <br> <br>
+          <div class = "funcs">
           <input class = "operator" type = "button" value = "+" onclick = "calc.answer.value += '+' ">  
           <input class = "operator" type = "button" value = "-" onclick = "calc.answer.value += '-' ">  
           <input class = "operator" type = "button" value = "*" onclick = "calc.answer.value += '*' ">  
           <input class = "operator" type = "button" value = "/" onclick = "calc.answer.value += '/' ">  
-          <br> <br>
+          </div> 
+          
           <div class= "numberpad">
+            <div class = "rowa">
           <input type = "button" value = "7" onclick = "calc.answer.value += '7' ">  
           <input type = "button" value = "8" onclick = "calc.answer.value += '8' ">  
           <input type = "button" value = "9" onclick = "calc.answer.value += '9' "> 
-          <input class = "equals" type = "button" value = "=" onclick = "calc.answer.value = eval(calc.answer.value) ">   
+          <input class = "equals" type = "button" value = "=" onclick = "calc.answer.value = eval(calc.answer.value) "> 
+            </div>  
+            <div class = "rowb">
           <input type = "button" value = "4" onclick = "calc.answer.value += '4' ">  
           <input type = "button" value = "5" onclick = "calc.answer.value += '5' ">  
           <input type = "button" value = "6" onclick = "calc.answer.value += '6' ">
-          <input type = "button" value = "." onclick = "calc.answer.value += '.' ">   
+          <input type = "button" value = "." onclick = "calc.answer.value += '.' ">  
+            </div> 
+            <div class = "rowc">
           <input type = "button" value = "1" onclick = "calc.answer.value += '1' "> 
           <input type = "button" value = "2" onclick = "calc.answer.value += '2' ">  
           <input type = "button" value = "3" onclick = "calc.answer.value += '3' "> 
           <input type = "button" value = "0" onclick = "calc.answer.value += '0' "> 
-          </div> 
+            </div> 
           </form>
-          <input class = "clear" type = "button" value = "CLEAR" onclick = "calc.answer.value = ' ' " id= "clear" >  
+          <input class = "clear" type = "button" value = "DELETE" onclick = "calc.answer.value = ' ' " id= "clear" >  
           <br>  
     </div>        
           <br>   
